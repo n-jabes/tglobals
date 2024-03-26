@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #000;
+  --color-light: #78788033;
+  --body-font: 'inter';
+  --bg-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color-primary);
+  font-family: var(--body-font);
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+@media screen and (min-width: 822px) {
+  .navbar {
+    width: 100vw;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+    /* border: 1px solid green; */
+  }
+
+  .logo {
+    cursor: pointer;
+    width: 10%;
+  }
+
+  .navbar .btn-group {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(245, 245, 137);
+    padding: 0.2rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+
+  .navbar .btn-group button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3c3c4399;
+    border-radius: 5rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+  }
+
+  .navbar .btn-group .active,
+  .navbar .btn-group button:hover {
+    background-color: #a57bff;
+    color: var(--bg-color);
+  }
+
+  .navbar .nav-links {
+    width: 50%;
+  }
+  .navbar .nav-links ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .navbar .nav-links ul li .nav-link {
+    color: #3c3c4399;
+  }
+
+  .navbar .nav-links ul li .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  .navbar .order-btn {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navbar .order-btn button {
+    background: #80ffab;
+    padding: 0.5rem 0.7em;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar .responsive-btns .close-icon,
+  .navbar .responsive-btns .menu-icon {
+    font-size: 1.5rem;
+  }
+
+  .navbar .responsive-btns {
+    display: none;
+  }
+
+  .responsive-navbar {
+    display: none;
+  }
+}
+
+/* responsiveness */
+@media screen and (max-width: 821px) {
+  .navbar {
+    display: none;
+  }
+  .responsive-navbar {
+    display: block;
+  }
+
+  .responsive-navbar .header {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+  }
+
+  .responsive-navbar .btn-group {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(245, 245, 137);
+    padding: 0.2rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .responsive-navbar .btn-group button {
+    background: transparent;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #3c3c4399;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+  }
+
+  .responsive-navbar .btn-group .active,
+  .responsive-navbar .btn-group button:hover {
+    background-color: #a57bff;
+    color: var(--bg-color);
+  }
+
+  .responsive-navbar .nav-links {
+    width: 100%;
+  }
+
+  .responsive-navbar .nav-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+
+  .responsive-navbar .nav-links ul li .nav-link {
+    color: #3c3c4399;
+  }
+
+  .responsive-navbar .nav-links ul li .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  .responsive-navbar .order-btn {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .responsive-navbar .order-btn button {
+    background: #80ffab;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .responsive-navbar .responsive-btns .close-icon,
+  .responsive-navbar .responsive-btns .menu-icon {
+    font-size: 2rem;
+  }
+}
+
+/* End of Navbar */
