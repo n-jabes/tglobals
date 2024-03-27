@@ -580,6 +580,94 @@ a {
   overflow: hidden;
 }
 
+.seventh-row {
+  background: #e4e4e4;
+  padding: 2rem;
+}
+
+.seventh-row .top .amount,
+.seventh-row .top .middle,
+.seventh-row .top .left {
+  height: 15vh;
+}
+
+.seventh-row .top .amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.seventh-row .top .amount sup {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 19%;
+}
+
+.seventh-row .top .middle {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -5%;
+  align-items: center;
+}
+
+.seventh-row .top .middle p span {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.seventh-row .left {
+  color: #3c3c4399;
+  width: 35%;
+  margin-left: 85%;
+}
+
+.calendar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container .calendar {
+  width: 30%;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.calendar-container .calendar h2,
+.calendar-container .calendar .cal {
+  padding: 0.5rem 1rem;
+}
+.calendar-container .calendar .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.calendar-container .calendar .price {
+  background: #f9ff8a;
+}
+
+.calendar-container .calendar .savings {
+  color: gray;
+}
+
+.calendar-container .order-btn {
+  width: 30%;
+  background: #80ffab;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 0.5rem;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 950px) {
@@ -721,6 +809,30 @@ a {
     min-width: 75vw;
     margin-right: 2rem;
   }
+
+  .seventh-row .calendar-container .calendar {
+    width: 70%;
+    font-size: 0.75rem;
+  }
+
+  .seventh-row .calendar-container .order-btn {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .seventh-row .top .middle {
+    width: 97%;
+  }
+  .seventh-row .top .middle p span {
+    /* width: 90%; */
+    font-size: 1rem;
+  }
+
+  .seventh-row .left {
+    width: 22.5%;
+    margin-left: 77.5%;
+    margin-bottom: 1%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -820,6 +932,27 @@ a {
   .fourth-row .bottom h2,
   .fourth-row .bottom h1 {
     font-size: 0.8rem;
+  }
+
+  .seventh-row .calendar-container .calendar {
+    margin-top: 5%;
+    width: 90%;
+    font-size: 0.7rem;
+  }
+
+  .seventh-row .calendar-container .order-btn {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .seventh-row .top .middle p span {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+
+  .seventh-row .left {
+    width: 50%;
+    margin-left: 55%;
   }
 }
 

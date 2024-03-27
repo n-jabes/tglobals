@@ -21,6 +21,7 @@ import example13 from '../assets/Exp2_row2_13.png';
 import example14 from '../assets/Exp2_row2_14.png';
 import example15 from '../assets/Exp2_row2_15.png';
 import example16 from '../assets/Exp2_row2_16.png';
+// import Calendar from './../components/Calendar';
 
 function Home(props) {
   return (
@@ -213,6 +214,46 @@ function Home(props) {
         <div className="example">
           <img src={example16} alt="example company" />
           <h2 className="name">Company name</h2>
+        </div>
+      </div>
+
+      <div className="seventh-row">
+        <div className="top">
+          <div className="amount">
+            $1750 <sup>per day</sup>
+          </div>
+          <div className="middle">
+            <p>
+              + <br />
+              <span>
+                discount for each subsequent <br /> day
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div className="left">
+          $2400 <br />
+          <span>
+            Average market price <br /> per day
+          </span>
+        </div>
+
+        <div className="calendar-container">
+          <div className="calendar">
+            <h2 className="heading">Calculate the cost for rent</h2>
+            <div className="cal">
+                {/* <Calendar /> */}
+            </div>
+            <h2 className="row price">
+              <span>Price for 9 days</span>{' '}
+              <span className="price-left">193088.99</span>
+            </h2>
+            <h2 className="row savings">
+              <span>Savings</span> <span className="savings-left">2400.02</span>
+            </h2>
+          </div>
+          <button className="order-btn">Order</button>
         </div>
       </div>
     </div>
