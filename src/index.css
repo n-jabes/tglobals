@@ -622,25 +622,27 @@ a {
   margin-left: 85%;
 }
 
-.calendar-container {
+.seventh-row .calendar-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.calendar-container .calendar {
+.seventh-row .calendar-container .calendar {
   width: 30%;
   background: var(--bg-color);
   border-radius: 1rem;
   margin: 0 auto;
   padding: 1rem 0;
 }
-.calendar-container .calendar h2,
-.calendar-container .calendar .cal {
+
+.seventh-row .calendar-container .calendar h2,
+.seventh-row .calendar-container .calendar .cal {
   padding: 0.5rem 1rem;
 }
-.calendar-container .calendar .row {
+
+.seventh-row .calendar-container .calendar .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -648,15 +650,15 @@ a {
   font-weight: 400;
 }
 
-.calendar-container .calendar .price {
+.seventh-row .calendar-container .calendar .price {
   background: #f9ff8a;
 }
 
-.calendar-container .calendar .savings {
+.seventh-row .calendar-container .calendar .savings {
   color: gray;
 }
 
-.calendar-container .order-btn {
+.seventh-row .calendar-container .order-btn {
   width: 30%;
   background: #80ffab;
   border-radius: 1rem;
@@ -666,6 +668,128 @@ a {
   font-weight: 700;
   font-size: 1.2em;
   margin-top: 0.5rem;
+}
+
+.seventh-row .bottom {
+  width: 40%;
+  margin: 4rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.seventh-row .bottom h2 {
+  margin: 1.3rem 0;
+}
+
+.eighth-row {
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.eighth-row img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nineth-row {
+  background: #e4e4e4;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+
+.nineth-row h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.nineth-row .table {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nineth-row .table .right {
+  width: 55%;
+}
+
+.nineth-row .table .right img {
+  width: 100%;
+}
+.nineth-row .table .left {
+  width: 30%;
+}
+.nineth-row .table .left .btn-group {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(245, 245, 137);
+  padding: 0.2rem;
+  border-radius: 5rem;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+}
+
+.nineth-row .table .left .btn-group button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3c3c4399;
+  border-radius: 5rem;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  min-width: 47.5%;
+}
+
+.nineth-row .table .left .btn-group .active,
+.nineth-row .table .left .btn-group button:hover {
+  background-color: #a57bff;
+  color: var(--bg-color);
+}
+
+.nineth-row .table .form {
+  width: 85%;
+  background: var(--bg-color);
+  margin: 0 auto;
+  border-radius: 0.75rem;
+}
+
+.nineth-row .table .left .form .row {
+  border-bottom: 1px solid #3c3c4399;
+  display: flex;
+  margin-left: 1rem;
+  padding: 0 0.75rem 0 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nineth-row .table .left .form .row5 {
+  display: flex;
+  margin-left: 1rem;
+  padding: 0 0.75rem 0 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nineth-row .table .form .row .left,
+.nineth-row .table .form .row5 .left {
+  color: #3c3c4399;
+  padding: 0.75rem 0;
+  width: 60%;
+}
+
+.nineth-row .table .form .row .right,
+.nineth-row .table .form .row5 .right {
+  text-align: right;
+  margin-right: 1rem;
 }
 
 /* responsiveness */
@@ -685,7 +809,6 @@ a {
   }
 
   .second-row .col .empty {
-    /* border: 1px solid green; */
     height: 5rem;
     width: 4.5rem;
   }
@@ -697,6 +820,12 @@ a {
   .fifth-row {
     height: max-content;
     min-height: 40vh;
+  }
+
+  .eighth-row {
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -934,6 +1063,12 @@ a {
     font-size: 0.8rem;
   }
 
+  .seventh-row .calendar-container .calendar h2 {
+    font-size: 1rem;
+  }
+  .seventh-row .calendar-container .calendar .row {
+    font-size: 0.7rem;
+  }
   .seventh-row .calendar-container .calendar {
     margin-top: 5%;
     width: 90%;
@@ -953,6 +1088,13 @@ a {
   .seventh-row .left {
     width: 50%;
     margin-left: 55%;
+    font-size: 0.8rem;
+  }
+
+  .seventh-row .bottom {
+    width: 100%;
+    margin: 4rem auto;
+    font-size: 0.7rem;
   }
 }
 

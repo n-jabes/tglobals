@@ -21,6 +21,8 @@ import example13 from '../assets/Exp2_row2_13.png';
 import example14 from '../assets/Exp2_row2_14.png';
 import example15 from '../assets/Exp2_row2_15.png';
 import example16 from '../assets/Exp2_row2_16.png';
+import Mobibo from '../assets/Mobibo.png';
+import Truck from '../assets/truck.png';
 // import Calendar from './../components/Calendar';
 
 function Home(props) {
@@ -242,9 +244,7 @@ function Home(props) {
         <div className="calendar-container">
           <div className="calendar">
             <h2 className="heading">Calculate the cost for rent</h2>
-            <div className="cal">
-                {/* <Calendar /> */}
-            </div>
+            <div className="cal">{/* <Calendar /> */}</div>
             <h2 className="row price">
               <span>Price for 9 days</span>{' '}
               <span className="price-left">193088.99</span>
@@ -254,6 +254,62 @@ function Home(props) {
             </h2>
           </div>
           <button className="order-btn">Order</button>
+        </div>
+
+        <div className="bottom">
+          <p>
+            We also offer wholesale pricing on 30-60 day campaigns <br /> which
+            starts at
+          </p>
+          <h2>$1250</h2>
+          <p>per day</p>
+        </div>
+      </div>
+
+      <div className="eighth-row">
+        <img src={Mobibo} alt="city" />
+      </div>
+
+      <div className="nineth-row">
+        <h2>Test your ideas</h2>
+        <div className="table">
+          <div className="left">
+            <div className="btn-group">
+              <button className="btn-left active">Side</button>
+              <button className="btn-right">Back</button>
+            </div>
+            <div className="btn-group">
+              <button className="btn-left active">2D</button>
+              <button className="btn-right">3D</button>
+            </div>
+            <div className="form">
+              <div className="row">
+                <div className="left">Advertising size</div>
+                <div className="right">11.5x6.5'</div>
+              </div>
+              <div className="row">
+                <div className="left">Available for</div>
+                <div className="right">Video/Image</div>
+              </div>
+              <div className="row">
+                <div className="left">File formats</div>
+                <div className="right">MP4/MOV/JPEG</div>
+              </div>
+              <div className="row">
+                <div className="left">Min resolution</div>
+                <div className="right">1280x720px</div>
+              </div>
+              <div className="row5">
+                <div className="left">Max file size</div>
+                <div className="right">50mb</div>
+              </div>
+            </div>
+            <button className="upload-btn"></button>
+            <button className="order-btn"></button>
+          </div>
+          <div className="right">
+            <img src={Truck} alt="SVG of a truck" />
+          </div>
         </div>
       </div>
     </div>
