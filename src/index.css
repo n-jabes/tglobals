@@ -347,6 +347,7 @@ a {
 
 .home .intro {
   background-image: url(./assets/landing.png);
+  object-fit: contain;
   width: 100%;
   min-height: 90vh;
   height: 100%;
@@ -363,22 +364,134 @@ a {
   font-weight: 900;
 }
 
-@media screen and (max-width: 821px) {
-  .home .intro .title {
-    font-size: 3rem;
-    width: 65%;
+.second-row {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 2rem;
+}
+
+.second-row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+  align-items: start;
+  /* border: 1px solid green; */
+  padding: 0;
+}
+
+.second-row .col h2 {
+  font-size: 6rem;
+  color: var(--color-light);
+}
+
+.second-row .col .empty {
+  bottom: 0.5rem;
+  /* border: 1px solid green; */
+  height: 10rem;
+  width: 5rem;
+}
+
+.second-row .col p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .second-row .col img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .second-row .col h2 {
+    font-size: 4rem;
+    color: var(--color-light);
+  }
+
+  .second-row .col .empty {
+    /* border: 1px solid green; */
+    height: 5rem;
+    width: 4.5rem;
+  }
+
+  .second-row .col p {
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 821px) {
+  .home .intro .title {
+    font-size: 3rem;
+    width: 70%;
+  }
+  .second-row .col img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .second-row .col h2 {
+    font-size: 3rem;
+    color: var(--color-light);
+  }
+
+  .second-row .col .empty {
+    height: 4rem;
+    width: 3.25rem;
+  }
+
+  .second-row .col p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .home .intro {
     padding: 1rem;
+    height: 75vh;
   }
   .home .intro .title {
     top: 1rem;
     left: 2rem;
     font-size: 1.5rem;
     width: 75%;
+  }
+  .second-row {
+    color: var(--color-primary);
+    flex-wrap: wrap;
+    height: 45vh;
+  }
+
+  .second-row .col {
+    height: 35%;
+    width: max-content;
+    justify-content: space-around;
+  }
+
+  .second-row .col1 {
+    width: 100%;
+  }
+
+  .second-row .col img {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #000;
+  }
+
+  .second-row .col h2 {
+    font-size: 2rem;
+    color: var(--color-light);
+  }
+
+  .second-row .col .empty {
+    height: 4rem;
+    width: 3.25rem;
+  }
+
+  .second-row .col p {
+    font-size: 0.8rem;
   }
 }
 
