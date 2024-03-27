@@ -1,6 +1,8 @@
 import React from 'react';
 import video from '../assets/video.png';
 import audio from '../assets/audio.png';
+import bulb from "../assets/row3_icon.png";
+import ledTruck from "../assets/row2_image.png";
 
 function Home(props) {
   return (
@@ -33,7 +35,17 @@ function Home(props) {
       </div>
 
       <div className="third-row">
-        <img src="../assets/row2_image.png" alt="led truck" />
+        <img src={ledTruck} alt="led truck" />
+        <div className="content">
+          <img src={bulb} alt="light bulb icon" />
+          <div className="desc">
+            <h3>Bright LED technology</h3>
+            <p>
+              Ensuring visibility <br /> under any lighting conditions, <br />{' '}
+              including bright sunlight
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
