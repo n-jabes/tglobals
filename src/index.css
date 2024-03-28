@@ -430,6 +430,7 @@ a {
 .fourth-row {
   height: 100vh;
   background-image: url(./assets/GamingConsole1.png);
+  background-repeat: no-repeat;
   object-fit: scale-down;
   color: var(--bg-color);
   display: flex;
@@ -887,7 +888,6 @@ a {
   padding: 2rem;
   font-size: 5rem;
   font-weight: 800;
-  line-height: 5rem;
   word-spacing: 1rem;
 }
 
@@ -949,9 +949,113 @@ a {
 
 .eleventh-row .container .right .ex {
   padding-left: 2rem;
-  /* margin-bottom: 10rem; */
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.twelveth-row {
+  width: 100%;
+  height: 100%;
+}
+
+.twelveth-row .top {
+  width: 100%;
+  height: 20%;
+  padding: 7.5% 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twelveth-row .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.twelveth-row .bottom .left {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.twelveth-row .bottom .left .nbr {
+  font-size: 25rem;
+  font-weight: 700;
+  color: #3c3c432e;
+  letter-spacing: -3.15rem;
+}
+
+.twelveth-row .bottom .left .address {
+  position: absolute;
+  left: 40%;
+  top: 47.5%;
+}
+
+.twelveth-row .bottom .right {
+  color: #3c3c4399;
+  width: 50%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+  font-size: 0.75rem;
+}
+
+.twelveth-row .bottom .right ul {
+}
+
+.thirteenth-row {
+  background: #e4e4e4;
+  padding: 2rem;
+}
+.thirteenth-row .h2 {
+  margin-bottom: 10%;
+}
+
+.thirteenth-row .h2 p {
+  color: var(--bg-color);
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.thirteenth-row .bottom {
+  width: 100%;
+}
+
+.thirteenth-row .bottom input {
+  border: none;
+  font-size: 1.3rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 2rem;
+  color: #3c3c434d;
+}
+
+.thirteenth-row .bottom .left {
+  font-size: 1rem;
+  color: #3c3c4399;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.thirteenth-row .bottom button {
+  cursor: pointer;
+  color: var(--bg-color);
+  padding: 0.75rem;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background: #ff80fd;
 }
 
 /* responsiveness */
@@ -1041,6 +1145,37 @@ a {
     font-weight: 800;
     font-size: 0.9rem;
     padding-left: 1.25rem;
+  }
+
+  .twelveth-row .bottom {
+    flex-direction: column;
+  }
+
+  .twelveth-row .bottom .right {
+    width: 80%;
+    padding: 5%;
+  }
+
+  .twelveth-row .bottom .right {
+    width: 100%;
+    padding: 5%;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+  }
+
+  .twelveth-row .bottom .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .twelveth-row .bottom .left .nbr {
+    font-size: 25rem;
+    font-weight: 700;
+    letter-spacing: -2.5rem;
+  }
+  .twelveth-row .bottom .left .address {
+    left: 47.5%;
+    top: 45%;
   }
 }
 
@@ -1214,6 +1349,58 @@ a {
     font-weight: 800;
     font-size: 0.7rem;
     padding-left: 1.25rem;
+  }
+
+  .twelveth-row .bottom {
+    flex-direction: column;
+  }
+
+  .twelveth-row .bottom .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .twelveth-row .bottom .left .nbr {
+    font-size: 15rem;
+    font-weight: 700;
+    letter-spacing: -1.5rem;
+  }
+
+  .twelveth-row .bottom .right {
+    width: 100%;
+    padding: 3%;
+    font-size: 0.65rem;
+    justify-content: space-evenly;
+  }
+
+  .thirteenth-row .h2 {
+    margin-bottom: 10%;
+  }
+
+  .thirteenth-row .h2 p {
+    font-size: 3rem;
+  }
+
+  .thirteenth-row .bottom {
+    width: 100%;
+  }
+
+  .thirteenth-row .bottom input {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3c3c432f;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .thirteenth-row .bottom .left {
+    font-size: 0.75rem;
+  }
+
+  .thirteenth-row .bottom button {
+    cursor: pointer;
+    width: 20%;
+    margin-left: 40%;
   }
 }
 
@@ -1404,8 +1591,8 @@ a {
     height: 50vh;
     margin-bottom: 0%;
     background-image: url(assets/MapExampleSmall.png);
+    background-repeat: no-repeat;
     object-fit: cover;
-    border: 1px solid green;
   }
 
   .eleventh-row .container .right .content {
@@ -1424,6 +1611,40 @@ a {
     font-size: 0.7rem;
     padding-left: 0rem;
     margin-bottom: 30%;
+  }
+
+  .thirteenth-row {
+    padding: 1rem;
+  }
+
+  .thirteenth-row .h2 p {
+    font-size: 2rem;
+  }
+
+  .thirteenth-row .bottom {
+    width: 100%;
+  }
+
+  .thirteenth-row .bottom input {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #3c3c432f;
+    width: 75%;
+    margin-left: 12.5%;
+  }
+
+  .thirteenth-row .bottom .left {
+    font-size: 0.65rem;
+    width: 80%;
+    margin-left: 25%;
+  }
+
+  .thirteenth-row .bottom button {
+    cursor: pointer;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 

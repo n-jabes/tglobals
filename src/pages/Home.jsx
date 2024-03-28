@@ -28,6 +28,8 @@ import Advertisement2 from '../assets/Ads_setting_2.png';
 import Advertisement3 from '../assets/Ads_setting_3.png';
 import Advertisement4 from '../assets/Ads_setting_4.png';
 import Map from '../assets/MapExample.png';
+import flag from '../assets/flag.png';
+
 import Calendar from './../components/Calendar';
 
 function Home(props) {
@@ -368,7 +370,7 @@ function Home(props) {
       </div>
 
       <div className="eleventh-row">
-        <img className='bg' src={Map} alt="map" />
+        <img className="bg" src={Map} alt="map" />
         <div className="container">
           <div className="left">
             <img src={Advertisement1} alt="advertisement " />
@@ -387,6 +389,93 @@ function Home(props) {
             </div>
             <div className="ex">Example</div>
           </div>
+        </div>
+      </div>
+
+      <div className="twelveth-row">
+        <div className="top">Work in</div>
+        <div className="bottom">
+          <div className="left">
+            <div className="nbr">50</div>
+            <div className="address">
+              cities <img src={flag} alt="" />
+            </div>
+          </div>
+          <div className="right">
+            <ul className="cities-left">
+              <li>New York</li>
+              <li>Houston</li>
+              <li>Phoenix (Prescott)</li>
+              <li>Orlando-Daytona Beach-Melbourne</li>
+              <li>Charlotte</li>
+              <li>Nashville</li>
+              <li>San Antonio</li>
+              <li>Greenville-Spartanburg-Asheville-Anderson</li>
+              <li>Jacksonville</li>
+              <li>Birmingham (Anniston and Tuscaloosa)</li>
+              <li>Los Angeles</li>
+              <li>Atlanta</li>
+              <li>Tampa-St. Petersburg (Sarasota)</li>
+              <li>Denver</li>
+              <li>Raleigh-Durham (Fayettville)</li>
+              <li>Salt Lake City</li>
+              <li>Hartford & New Haven</li>
+              <li>Cincinatti</li>
+              <li>Grand Rapids-Kalamazoo-Battle Creek</li>
+              <li>Oklahoma City</li>
+              <li>Chicago</li>
+              <li>Boston (Manchester)</li>
+              <li>Seattle-Tacoma</li>
+              <li>Miami-Fort Lauderdale</li>
+              <li>Portland, OR</li>
+            </ul>
+            <ul className="cities-right">
+              <li>Pittsburgh</li>
+              <li>Columbus, OH</li>
+              <li>Milwauke</li>
+              <li>Norfolk-Portsmouth-Newport News</li>
+              <li>Louisville</li>
+              <li>Philadelphia</li>
+              <li>Washington, D.C. (Hagerstown)</li>
+              <li>Detroit</li>
+              <li>Cleveland-Akron (Canton)</li>
+              <li>St. Louis</li>
+              <li>Baltimore</li>
+              <li>Kansas City</li>
+              <li>West Palm Beach-Fort Pierce</li>
+              <li>Harrisburg-Lancaster-Lebanon-York</li>
+              <li>Albuquerque-Santa Fe</li>
+              <li>Dallas-Forth Worth</li>
+              <li>San Francisco-Oakland-San Jose</li>
+              <li>Minneapolis-St. Paul</li>
+              <li>Sacramentio-Stockton-Modesto</li>
+              <li>Indianapolis</li>
+              <li>San Diego</li>
+              <li>Austin</li>
+              <li>Las Vegas</li>
+              <li>Greensboro-High Point-Winston-Salem</li>
+              <li>Memphis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="thirteenth-row">
+        <div className="top">
+          <div className="h2">
+            <p>If you have</p>
+            <p>not found the</p>
+            <p>city you are</p>
+            <p>interested in</p>
+          </div>
+        </div>
+        <div className="bottom">
+          <input type="text" placeholder="Offer your location" />
+          <p className="left">
+            and we will try to organize and advertising <br /> campaign for you
+            there
+          </p>
+          <button>Offer</button>
         </div>
       </div>
     </div>
