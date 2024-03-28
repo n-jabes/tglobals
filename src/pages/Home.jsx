@@ -30,6 +30,11 @@ import Advertisement4 from '../assets/Ads_setting_4.png';
 import Map from '../assets/MapExample.png';
 import flag from '../assets/flag.png';
 import lightLogo from '../assets/order_logo.png';
+import logoLight from '../assets/logoLight.png';
+import linkedIn from '../assets/linkedIn.png';
+import facebook from '../assets/facebook.png';
+import instagram from '../assets/instagram.png';
+import pinterest from '../assets/pinterest.png';
 
 import Calendar from './../components/Calendar';
 
@@ -517,7 +522,7 @@ function Home(props) {
               <p>Creatives</p>
               <p>route optimization</p>
               <p>Measurement</p>
-              <p className="lightText">Etc</p>
+              <p className="etc">Etc</p>
             </div>
             <div className="step">
               <span>3</span> Payment
@@ -527,6 +532,62 @@ function Home(props) {
         <div className="bottom">
           <div className="adsArea"></div>
           <button>Run ads</button>
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="container">
+          <div className="logoContainer">
+            <img src={logoLight} alt="logo" />
+          </div>
+          <div className="middle">
+            <div className="left">
+              <div className="inner-left">
+                <p>About Us</p>
+                <p>Features</p>
+                <p>Experience</p>
+                <p>Video</p>
+                <p>Trucks</p>
+                <p>Pricing</p>
+                <p>Ads settings</p>
+                <p>Customizable</p>
+                <p>Coverage</p>
+                <p>Map</p>
+                <p>Order process</p>
+              </div>
+              <div className="inner-right">
+                <p>Blog</p>
+                <p>Sitemap</p>
+              </div>
+            </div>
+            <div className="right">
+              <p>New York</p>
+              <p>418 Broadway</p>
+              <p>STE 4725 Albany, NY 12207</p>
+              <p>(718) 635-1316</p>
+              <p>victoria@heyGoals.com</p>
+              <button>Call</button>
+              <div className="socials">
+                <img src={linkedIn} alt="linkedIn" />
+                <img src={facebook} alt="facebook" />
+                <img src={instagram} alt="instagram" />
+                <img src={pinterest} alt="pinterest" />
+              </div>
+            </div>
+          </div>
+          <div className="left">
+            <p>
+              Everything you need to know <br /> before ordering advertising
+            </p>
+            <button>Ads Blog</button>
+          </div>
+        </div>
+
+        <div className="bottom">
+          <p>
+            Privacy Policy <span>Terms of Service</span>
+          </p>
+          <p>powered by Zipscore</p>
         </div>
       </div>
     </div>
