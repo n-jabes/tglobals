@@ -257,9 +257,9 @@ function Home(props) {
         <div className="calendar-container">
           <div className="calendar">
             <h2 className="heading">Calculate the cost for rent</h2>
-            {/* <div className="cal"> <Calendar /> </div> */}
+            <div className="cal"> <Calendar className='innerCalendar'/> </div>
             <h2 className="row price">
-              <span>Price for 9 days</span>{' '}
+              <span>Price for 9 days</span>
               <span className="price-left">193088.99</span>
             </h2>
             <h2 className="row savings">
@@ -590,6 +590,7 @@ function Home(props) {
           <p>powered by Zipscore</p>
         </div>
       </div>
+
     </div>
   );
 }
