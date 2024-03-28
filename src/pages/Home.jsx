@@ -29,6 +29,7 @@ import Advertisement3 from '../assets/Ads_setting_3.png';
 import Advertisement4 from '../assets/Ads_setting_4.png';
 import Map from '../assets/MapExample.png';
 import flag from '../assets/flag.png';
+import lightLogo from '../assets/order_logo.png';
 
 import Calendar from './../components/Calendar';
 
@@ -476,6 +477,56 @@ function Home(props) {
             there
           </p>
           <button>Offer</button>
+        </div>
+      </div>
+
+      <div className="fourteenth-row">
+        <h2>Order process</h2>
+        <div className="container">
+          <div className="left">
+            <p className="lightText">it's very easy</p>
+            <img src={lightLogo} alt="ligt logo" />
+          </div>
+          <div className="right">
+            <div className="step">
+              <span>1</span> Application for advertising placement
+            </div>
+            <div className="floated">
+              <p>Specify the city</p>
+              <p>Specify the dates</p>
+              <p>
+                Attach your advertising materials
+                <p className="sub lightText">
+                  can be skipped and sent after payment
+                </p>
+              </p>
+              <p>
+                Provide personal information
+                <p className=" sub lightText">
+                  First Name <br /> Last Name <br /> Email <br /> Phone <br />
+                  Company name <br /> Notes to LED truck driver
+                </p>
+              </p>
+            </div>
+            <div className="step">
+              <span>2</span> Coordinating all points with our advertising
+              strategist
+              <p className="sub lightText">who will contact you</p>
+            </div>
+            <div className="floated">
+              <p>Creatives</p>
+              <p>route optimization</p>
+              <p>Measurement</p>
+              <p className="lightText">Etc</p>
+            </div>
+            <div className="step">
+              <span>3</span> Payment
+            </div>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="adsArea"></div>
+          <button>Run ads</button>
         </div>
       </div>
     </div>

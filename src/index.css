@@ -1058,6 +1058,82 @@ a {
   background: #ff80fd;
 }
 
+.fourteenth-row {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+.lightText {
+  color: #3c3c434d;
+}
+
+.fourteenth-row h2 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+.fourteenth-row .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fourteenth-row .container .left {
+  width: 50%;
+}
+
+.fourteenth-row .container .left p {
+  width: 50%;
+  margin-left: 50%;
+  margin-bottom: 1%;
+}
+
+.fourteenth-row .container .left img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+.fourteenth-row .container .right {
+  width: 50%;
+}
+
+.fourteenth-row .container .right .step span {
+  margin-right: 0.5rem;
+}
+
+.fourteenth-row .container .right .floated {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.fourteenth-row .container .right .floated p .sub {
+  text-align: end;
+  font-size: 0.75rem;
+}
+
+.fourteenth-row .container .right .step .sub {
+  font-size: 0.75rem;
+  margin-left: 1.5rem;
+}
+
+.fourteenth-row .bottom .adsArea {
+  height: 40vh;
+  width: 100%;
+}
+
+.fourteenth-row .bottom button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 15%;
+  margin-left: 42.5%;
+  border: none;
+  border-radius: 1rem;
+  background: #80ffab;
+  cursor: pointer;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 950px) {
@@ -1402,6 +1478,53 @@ a {
     width: 20%;
     margin-left: 40%;
   }
+
+  .fourteenth-row {
+    padding: 1rem;
+  }
+
+  .fourteenth-row h2 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .fourteenth-row .container .left p {
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 4%;
+  }
+
+  .fourteenth-row .container .left img {
+    width: 95%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .fourteenth-row .container .right {
+    width: 50%;
+  }
+
+  .fourteenth-row .container .right .floated {
+    width: 60%;
+    margin-left: 40%;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .fourteenth-row .container .right .floated p .sub {
+    font-size: 0.65rem;
+  }
+
+  .fourteenth-row .bottom .adsArea {
+    height: 50vh;
+  }
+
+  .fourteenth-row .bottom button {
+    font-size: 1.2rem;
+    width: 25%;
+    margin-left: 37.5%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1645,6 +1768,41 @@ a {
     margin-left: 30%;
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  .fourteenth-row {
+    padding: 1rem;
+  }
+
+  .fourteenth-row h2 {
+    font-size: 1.4rem;
+  }
+
+  .fourteenth-row .container {
+    align-items: start;
+  }
+
+  .fourteenth-row .container .left p {
+    width: 65%;
+    margin-left: 35%;
+    font-size: 0.75em;
+  }
+
+  .fourteenth-row .container .right {font-size: 0.75rem;}
+  .fourteenth-row .container .right .floated {
+    width: 65%;
+    margin-left: 35%;
+    font-size: 0.65rem;
+  }
+
+  .fourteenth-row .bottom .adsArea {
+    height: 45vh;
+  }
+
+  .fourteenth-row .bottom button {
+    font-size: 1rem;
+    width: 50%;
+    margin-left: 25%;
   }
 }
 
