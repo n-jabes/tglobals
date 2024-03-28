@@ -23,7 +23,12 @@ import example15 from '../assets/Exp2_row2_15.png';
 import example16 from '../assets/Exp2_row2_16.png';
 import Mobibo from '../assets/Mobibo.png';
 import Truck from '../assets/truck.png';
-// import Calendar from './../components/Calendar';
+import Advertisement1 from '../assets/Ads_setting_1.png';
+import Advertisement2 from '../assets/Ads_setting_2.png';
+import Advertisement3 from '../assets/Ads_setting_3.png';
+import Advertisement4 from '../assets/Ads_setting_4.png';
+import Map from '../assets/MapExample.png';
+import Calendar from './../components/Calendar';
 
 function Home(props) {
   return (
@@ -244,7 +249,7 @@ function Home(props) {
         <div className="calendar-container">
           <div className="calendar">
             <h2 className="heading">Calculate the cost for rent</h2>
-            <div className="cal">{/* <Calendar /> */}</div>
+            {/* <div className="cal"> <Calendar /> </div> */}
             <h2 className="row price">
               <span>Price for 9 days</span>{' '}
               <span className="price-left">193088.99</span>
@@ -304,11 +309,83 @@ function Home(props) {
                 <div className="right">50mb</div>
               </div>
             </div>
-            <button className="upload-btn"></button>
-            <button className="order-btn"></button>
+            <button className="upload-btn">Upload</button>
+            <button className="order-btn">Order</button>
           </div>
           <div className="right">
             <img src={Truck} alt="SVG of a truck" />
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="left">
+            <p>Also</p>
+            <p>All our trucks are</p>
+          </div>
+          <div className="right">
+            <p>
+              <span>black</span> <br /> and <br /> unbranded
+            </p>
+            <p>
+              to give you <br /> maximum transparency
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="tenth-row">
+        <div className="top">
+          <div className="left">Ad campaign settings</div>
+          <div className="right">
+            <div className="col">
+              <h3>Before</h3>
+              <p>
+                We’ll present you with a proposed route based on our own
+                analysis and you’ll also be able to request specific locations
+                as well.
+              </p>
+            </div>
+            <div className="col">
+              <h3>During</h3>
+              <p>
+                During the campaign, you’ll receive updates and optimization
+                suggestions from a dedicated team.
+              </p>
+            </div>
+            <div className="col">
+              <h3>After</h3>
+              <p>
+                Post-campaign, a detailed report with GPS data, a gallery, and
+                raw data for retargeting on social media is provided.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bottom">
+          Pick a place <br />
+          where your target audience <br /> congregates <br /> and show them{' '}
+          <br /> the ads
+        </div>
+      </div>
+
+      <div className="eleventh-row">
+        <img className='bg' src={Map} alt="map" />
+        <div className="container">
+          <div className="left">
+            <img src={Advertisement1} alt="advertisement " />
+            <img src={Advertisement2} alt="advertisement " />
+            <img src={Advertisement3} alt="advertisement " />
+            <img src={Advertisement4} alt="advertisement " />
+          </div>
+          <div className="right">
+            <div className="content">
+              <h2>All campaign routes are fully customizable</h2>
+              <p>Date</p>
+              <p>Place</p>
+              <p>Time</p>
+              <p>Duration</p>
+              <p>etc.</p>
+            </div>
+            <div className="ex">Example</div>
           </div>
         </div>
       </div>
