@@ -642,11 +642,12 @@ a {
 .seventh-row .calendar-container .calendar .cal {
   padding: 0.5rem 1rem;
 }
-
-.seventh-row .calendar-container .calendar .cal .innerCalendar {
-  width: 100%;
-  padding-left: 0.1rem;
-  border: 1px solid green;
+.seventh-row .calendar-container .calendar .cal {
+  overflow: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seventh-row .calendar-container .calendar .row {
