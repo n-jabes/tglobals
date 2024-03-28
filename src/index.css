@@ -429,13 +429,27 @@ a {
 
 .fourth-row {
   height: 100vh;
-  background-image: url(./assets/GamingConsole1.png);
-  background-repeat: no-repeat;
   object-fit: scale-down;
   color: var(--bg-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.fourth-row .fourth-row-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.fourth-row .fourth-row-bg img {
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
 }
 
 .fourth-row .top {
@@ -444,6 +458,7 @@ a {
   justify-content: space-between;
   padding: 1.5rem;
   gap: 2rem;
+  z-index: 10;
 }
 
 .fourth-row .top .top-left {
@@ -475,6 +490,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  z-index: 10;
 }
 
 .fourth-row .bottom img {

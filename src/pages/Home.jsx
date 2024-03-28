@@ -83,7 +83,9 @@ function Home(props) {
       </div>
 
       <div className="fourth-row">
-        {/* <img src={gamingconsole} alt="people playing games on the LED truck" /> */}
+        <div className="fourth-row-bg">
+          <img src={gamingconsole} alt="people playing games on the LED truck" />
+        </div>
         <div className="top">
           <div className="top-left">
             <p>You can use the LED truck as </p>
@@ -257,7 +259,10 @@ function Home(props) {
         <div className="calendar-container">
           <div className="calendar">
             <h2 className="heading">Calculate the cost for rent</h2>
-            <div className="cal"> <Calendar className='innerCalendar'/> </div>
+            <div className="cal">
+              {' '}
+              <Calendar className="innerCalendar" />{' '}
+            </div>
             <h2 className="row price">
               <span>Price for 9 days</span>
               <span className="price-left">193088.99</span>
@@ -590,7 +595,6 @@ function Home(props) {
           <p>powered by Zipscore</p>
         </div>
       </div>
-
     </div>
   );
 }
